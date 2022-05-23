@@ -54,5 +54,5 @@ where `%PID%` - is a process pid. After receive this signal statistic report acc
 1. Clone repository
 2. Install dependencies `npm ci`
 3. Build client and server `npm run build`
-4. Start server `npm run start server`
-5. Start client `npm run start client`
+4. Start server `npm run server`
+5. Start client `npm run client`
