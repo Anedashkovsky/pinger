@@ -30,21 +30,18 @@ error count: ${this.errorCount};`);
   }
 
   public logError(): void {
-    this.increaseRequests();
     this.errorCount++;
   }
 
   public logSuccess(): void {
-    this.increaseRequests();
     this.successCount++;
   }
 
   public logTimeout(): void {
-    this.increaseRequests();
     this.timeoutCount++;
   }
 
-  private increaseRequests(): void {
+  increaseRequests(): void {
     this.requestsCount++;
   }
 }

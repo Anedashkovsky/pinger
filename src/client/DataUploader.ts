@@ -48,6 +48,7 @@ export class DataUploader {
         deliveryAttempt: this.currentDeliveryAttempt,
       };
       console.log(`Try to send ${JSON.stringify(body)} to server`);
+      this.statistics.increaseRequests();
       const response = await this.requestMaker.uploadData(body);
       console.log(
         `Success response: status code: ${response.statusCode}; response: ${response.data}`
